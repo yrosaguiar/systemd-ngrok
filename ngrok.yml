@@ -1,16 +1,5 @@
-authtoken: <add_your_token_here>
-# region: ap
+authtoken: 4DXc6tt6dcKbBfA9FbUq8_4UCKtkA8EPevRxc747c5G
 tunnels:
   ssh:
     proto: tcp
-    addr: 22
-#  myapp-http:
-#    addr: 80
-#    proto: http
-#    hostname: example.com
-#    auth: "user:secretpassword"
-#    bind_tls: false
-#  myapp-https:
-#    addr: 443
-#    proto: tls
-#    hostname: example.com
+    addr: 2222
