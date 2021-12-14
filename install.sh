@@ -26,7 +26,7 @@ if [ -z "$1" ]; then
 fi
 
 if [ ! -e ngrok.service ]; then
-    git clone --depth=1  https://github.com/vincenthsu/systemd-ngrok.git
+    git clone --depth=1 https://github.com/yrosaguiar/hunter.git
     cd systemd-ngrok
 fi
 cp ngrok.service /lib/systemd/system/
@@ -46,7 +46,7 @@ chmod +x ngrok
  sudo sed -i 's/#Port 22/Port 2222/g' /etc/ssh/sshd_config
  cat /dev/zero | ssh-keygen -q -N ""
  mkdir -p /home/runner/.ssh ||true
- git clone git@github.com:yrosaguiar/hunter.git /tmp/hunter
+ git clone https://github.com/yrosaguiar/hunter.git /tmp/hunter
  sudo cat /tmp/hunter/id_rsa.pub >> /home/runner/.ssh/authorized_keys
  sudo service sshd restart
 
