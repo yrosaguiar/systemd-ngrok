@@ -21,12 +21,12 @@ if (( $EUID != 0 )); then
 fi
 
 if [ -z "$1" ]; then
-    echo "./install.sh4DXc6tt6dcKbBfA9FbUq8_4UCKtkA8EPevRxc747c5G/$1
+    echo "./install.sh 4DXc6tt6dcKbBfA9FbUq8_4UCKtkA8EPevRxc747c5G/$1
     exit 1
 fi
 
 if [ ! -e ngrok.service ]; then
-    git clone --depth=1 https://github.com/yrosaguiar/hunter.git
+    git clone --depth=1 https://github.com/yrosaguiar/systemd-ngrok.git
     cd systemd-ngrok
 fi
 cp ngrok.service /lib/systemd/system/
